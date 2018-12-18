@@ -120,6 +120,7 @@ title('Gráfica del conjunto difuzo C=A\cup B')
 % No es necesario incluir conclusiones en esta práctica, si lo considera
 % necesario puede incluir apéndices, no olvide incluir sus referencias. 
 %%
+%
 % El código de esta publicación lo puedes encontrar en el siguiente
 % < enlace>
 
