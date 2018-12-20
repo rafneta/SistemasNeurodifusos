@@ -58,7 +58,7 @@ axis([-4,8,-0.1,1.1])
 x = -11:0.1:10;
 A = trapmf(x,[-10 -8 -2 2]);
 B = trapmf(x,[-5 -3 2 4]);
-C = max(mf1, mf2);
+C = max(A, B);
 
 subplot(3,1,1)
 plot(x,A,'LineWidth',3);

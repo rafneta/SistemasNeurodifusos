@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>Pr&aacute;ctica 1: Operaciones, relaciones y transformaciones en el dominio difuso</title><meta name="generator" content="MATLAB 9.5"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-12-18"><meta name="DC.source" content="Practica1.m"><style type="text/css">
+      --><title>Pr&aacute;ctica 1: Operaciones, relaciones y transformaciones en el dominio difuso</title><meta name="generator" content="MATLAB 9.5"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-12-20"><meta name="DC.source" content="Practica1.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -101,7 +101,7 @@ axis([-4,8,-0.1,1.1])
 </pre><img vspace="5" hspace="5" src="Practica1_01.png" alt=""> <p>De igualmanera se tienen las siguientes funciones de membresia implementadas</p><div><ul><li>trapmf</li><li>gbellmf</li><li>trimf</li><li>gaussmf</li><li>gauss2mf</li><li>smf</li><li>zmf</li><li>psigmf</li><li>dsigmf</li><li>pimf</li><li>sigmf</li></ul></div><p>En la ayuda de MATLAB se puede encontrar una descripci&oacute;n de cada una de estas funcines as&iacute; como ejemplos de gr&aacute;ficas, la siguiente gr&aacute;fica muestra estos ejemplos</p><p><img vspace="5" hspace="5" src="fmg.png" alt=""> </p><p>Se pueden realizar operaciones entre los conjuntos difuzos, utilizando la herramienta mencionada</p><pre class="codeinput">x = -11:0.1:10;
 A = trapmf(x,[-10 -8 -2 2]);
 B = trapmf(x,[-5 -3 2 4]);
-C = max(mf1, mf2);
+C = max(A, B);
 
 subplot(3,1,1)
 plot(x,A,<span class="string">'LineWidth'</span>,3);
@@ -120,11 +120,7 @@ plot(x,C,<span class="string">'LineWidth'</span>,3);
 grid <span class="string">on</span>
 axis([-12,11,-0.1,1.1])
 title(<span class="string">'Gr&aacute;fica del conjunto difuzo C=A\cup B'</span>)
-</pre><pre class="codeoutput error">Undefined function or variable 'mf1'.
-
-Error in Practica1 (line 61)
-C = max(mf1, mf2);
-</pre><h2 id="8">Entregables</h2><p>Se revisa una publicaci&oacute;n (html) de la pr&aacute;ctica. En este caso tend&aacute; que iniciar indicando el nombre de la pr&aacute;ctica y sus datos personales, equipos de dos o tres personas (Portada). El &iacute;ndice del contenido lo genera Publish (&iacute;ndice). Los objetivos son los sigueintes:</p><p>*</p><p>Como introducci&oacute;n investigue  m&oacute;dulos de Python para logica difuza, puede incluir, como se instala el m&oacute;dulo, como se gr&aacute;fican las funciones de membresia, como se operan los conjuntos difusos, ejemplosl etc., en el siguiente <a href="https://github.com/scikit-fuzzy/scikit-fuzzy">enlace</a> se encuentra el repositorio oficial del m&oacute;dulo <b>scikit-fuzzy</b>, por supuesto puede buscar otras referencias.</p><p>Para el desarrollo se tienen que resolver cada uno de los siguientes problemas comenzando una nueva secci&oacute;n (para la publicaci&oacute;n) en cada uno de ellos.</p><p><b>1.</b> Implemente una funci&oacute;n que se llame <i>senomf</i> que implemente la sigueinte funci&oacute;n de membresia</p><p><b>2.</b> Construya una funci&oacute;n que gr&aacute;fique funciones de membresia en el formato de su elecci&oacute;n. La funci&oacute;n debe de recibir las abscisas y las ordenadas as&iacute; como las etiquetas de los ejes. No debe incluir el c&oacute;digo, solo el uso de la funci&oacute;n para mostrar la gr&aacute;fica del sigueinte conjunto difuzo</p><p><b>3.</b> Implemente una gr&aacute;fica (subplot de 3x2) donde indique ejemplos especificos para ilustrar</p><p><img vspace="5" hspace="5" src="ema.png" alt=""> </p><p><b>4.</b> Para  los conjuntos difusos</p><p>verifique las siguientes propiedades</p><p><img vspace="5" hspace="5" src="propiedades.png" alt=""> </p><p>No es necesario incluir conclusiones en esta pr&aacute;ctica, si lo considera necesario puede incluir ap&eacute;ndices, no olvide incluir sus referencias.</p><p>El c&oacute;digo de esta publicaci&oacute;n lo puedes encontrar en el siguiente &lt; enlace&gt;</p><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018b</a><br></p></div><!--
+</pre><img vspace="5" hspace="5" src="Practica1_02.png" alt=""> <h2 id="8">Entregables</h2><p>Se revisa una publicaci&oacute;n (html) de la pr&aacute;ctica. En este caso tend&aacute; que iniciar indicando el nombre de la pr&aacute;ctica y sus datos personales, equipos de dos o tres personas (Portada). El &iacute;ndice del contenido lo genera Publish (&iacute;ndice). Los objetivos son los sigueintes:</p><p>*</p><p>Como introducci&oacute;n investigue  m&oacute;dulos de Python para logica difuza, puede incluir, como se instala el m&oacute;dulo, como se gr&aacute;fican las funciones de membresia, como se operan los conjuntos difusos, ejemplosl etc., en el siguiente <a href="https://github.com/scikit-fuzzy/scikit-fuzzy">enlace</a> se encuentra el repositorio oficial del m&oacute;dulo <b>scikit-fuzzy</b>, por supuesto puede buscar otras referencias.</p><p>Para el desarrollo se tienen que resolver cada uno de los siguientes problemas comenzando una nueva secci&oacute;n (para la publicaci&oacute;n) en cada uno de ellos.</p><p><b>1.</b> Implemente una funci&oacute;n que se llame <i>senomf</i> que implemente la sigueinte funci&oacute;n de membresia</p><p><b>2.</b> Construya una funci&oacute;n que gr&aacute;fique funciones de membresia en el formato de su elecci&oacute;n. La funci&oacute;n debe de recibir las abscisas y las ordenadas as&iacute; como las etiquetas de los ejes. No debe incluir el c&oacute;digo, solo el uso de la funci&oacute;n para mostrar la gr&aacute;fica del sigueinte conjunto difuzo</p><p><b>3.</b> Implemente una gr&aacute;fica (subplot de 3x2) donde indique ejemplos especificos para ilustrar</p><p><img vspace="5" hspace="5" src="ema.png" alt=""> </p><p><b>4.</b> Para  los conjuntos difusos</p><p>verifique las siguientes propiedades</p><p><img vspace="5" hspace="5" src="propiedades.png" alt=""> </p><p>No es necesario incluir conclusiones en esta pr&aacute;ctica, si lo considera necesario puede incluir ap&eacute;ndices, no olvide incluir sus referencias.</p><p>El c&oacute;digo de esta publicaci&oacute;n lo puedes encontrar en el siguiente &lt; enlace&gt;</p><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018b</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %% Práctica 1: Operaciones, relaciones y transformaciones en el dominio difuso
 
@@ -186,7 +182,7 @@ axis([-4,8,-0.1,1.1])
 x = -11:0.1:10;
 A = trapmf(x,[-10 -8 -2 2]);
 B = trapmf(x,[-5 -3 2 4]);
-C = max(mf1, mf2);
+C = max(A, B);
 
 subplot(3,1,1)
 plot(x,A,'LineWidth',3);
