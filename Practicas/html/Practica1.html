@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>Pr&aacute;ctica 1: Operaciones, relaciones y transformaciones en el dominio difuso</title><meta name="generator" content="MATLAB 9.5"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-12-20"><meta name="DC.source" content="Practica1.m"><style type="text/css">
+      --><title>Pr&aacute;ctica 1: Operaciones, relaciones y transformaciones en el dominio difuso</title><meta name="generator" content="MATLAB 9.5"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-01-06"><meta name="DC.source" content="Practica1.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -66,7 +66,7 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h1>Pr&aacute;ctica 1: Operaciones, relaciones y transformaciones en el dominio difuso</h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Objetivos</a></li><li><a href="#3">Desarrollo</a></li><li><a href="#8">Entregables</a></li></ul></div><h2 id="1">Objetivos</h2><div><ol><li>Gr&aacute;ficar las funciones de pertenecia implementadas en la herramienta Fuzzy Logic Toolbox # #</li></ol></div><h2 id="3">Desarrollo</h2><p>MATLAB cuenta con la herramienta <b>Fuzzy Logic Toolbox</b>, que tiene implementada la funci&oacute;n de menbresia <i>trapmf</i>, para consultar su documentaci&oacute;n y ayuda</p><pre class="codeinput">help <span class="string">trapmf</span>
+  </style></head><body><div class="content"><h1>Pr&aacute;ctica 1: Operaciones, relaciones y transformaciones en el dominio difuso</h1><!--introduction--><p>Duraci&oacute;n: 9.5 horas</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Objetivos</a></li><li><a href="#3">Desarrollo</a></li><li><a href="#8">Entregables</a></li></ul></div><h2 id="1">Objetivos</h2><div><ul><li>Implementar operaciones de conjuntos difusos, utilizando MATLAB</li><li>Implementar relaciones de conjuntos difusos, utilizando MATLAB</li><li>Implementar tranformaciones de conjuntos difusos, utilizando MATLAB</li></ul></div><h2 id="3">Desarrollo</h2><p>MATLAB cuenta con la herramienta <b>Fuzzy Logic Toolbox</b>, que tiene implementada la funci&oacute;n de membresia <i>trapmf</i>, para consultar su documentaci&oacute;n y ayuda</p><pre class="codeinput">help <span class="string">trapmf</span>
 </pre><pre class="codeoutput"> TRAPMF Trapezoidal membership function.
     TRAPMF(X, PARAMS) returns a matrix which is the trapezoidal
     membership function evaluated at X. PARAMS = [A B C D] is a 4-element
@@ -120,21 +120,22 @@ plot(x,C,<span class="string">'LineWidth'</span>,3);
 grid <span class="string">on</span>
 axis([-12,11,-0.1,1.1])
 title(<span class="string">'Gr&aacute;fica del conjunto difuzo C=A\cup B'</span>)
-</pre><img vspace="5" hspace="5" src="Practica1_02.png" alt=""> <h2 id="8">Entregables</h2><p>Se revisa una publicaci&oacute;n (html) de la pr&aacute;ctica. En este caso tend&aacute; que iniciar indicando el nombre de la pr&aacute;ctica y sus datos personales, equipos de dos o tres personas (Portada). El &iacute;ndice del contenido lo genera Publish (&iacute;ndice). Los objetivos son los sigueintes:</p><p>*</p><p>Como introducci&oacute;n investigue  m&oacute;dulos de Python para logica difuza, puede incluir, como se instala el m&oacute;dulo, como se gr&aacute;fican las funciones de membresia, como se operan los conjuntos difusos, ejemplosl etc., en el siguiente <a href="https://github.com/scikit-fuzzy/scikit-fuzzy">enlace</a> se encuentra el repositorio oficial del m&oacute;dulo <b>scikit-fuzzy</b>, por supuesto puede buscar otras referencias.</p><p>Para el desarrollo se tienen que resolver cada uno de los siguientes problemas comenzando una nueva secci&oacute;n (para la publicaci&oacute;n) en cada uno de ellos.</p><p><b>1.</b> Implemente una funci&oacute;n que se llame <i>senomf</i> que implemente la sigueinte funci&oacute;n de membresia</p><p><b>2.</b> Construya una funci&oacute;n que gr&aacute;fique funciones de membresia en el formato de su elecci&oacute;n. La funci&oacute;n debe de recibir las abscisas y las ordenadas as&iacute; como las etiquetas de los ejes. No debe incluir el c&oacute;digo, solo el uso de la funci&oacute;n para mostrar la gr&aacute;fica del sigueinte conjunto difuzo</p><p><b>3.</b> Implemente una gr&aacute;fica (subplot de 3x2) donde indique ejemplos especificos para ilustrar</p><p><img vspace="5" hspace="5" src="ema.png" alt=""> </p><p><b>4.</b> Para  los conjuntos difusos</p><p>verifique las siguientes propiedades</p><p><img vspace="5" hspace="5" src="propiedades.png" alt=""> </p><p>No es necesario incluir conclusiones en esta pr&aacute;ctica, si lo considera necesario puede incluir ap&eacute;ndices, no olvide incluir sus referencias.</p><p>El c&oacute;digo de esta publicaci&oacute;n lo puedes encontrar en el siguiente &lt; enlace&gt;</p><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018b</a><br></p></div><!--
+</pre><img vspace="5" hspace="5" src="Practica1_02.png" alt=""> <h2 id="8">Entregables</h2><p>Se revisa una publicaci&oacute;n (html) de la pr&aacute;ctica. En este caso tend&aacute; que iniciar indicando el nombre de la pr&aacute;ctica y sus datos personales, equipos de dos o tres personas (Portada). El &iacute;ndice del contenido lo genera Publish (&iacute;ndice). Los objetivos deben ser incluidos y se han presentado al principio de la pr&aacute;ctica.</p><p>Como introducci&oacute;n investigue  m&oacute;dulos de Python para logica difuza, puede incluir, como se instala el m&oacute;dulo, como se gr&aacute;fican las funciones de membresia, como se operan los conjuntos difusos, ejemplos, etc., en el siguiente <a href="https://github.com/scikit-fuzzy/scikit-fuzzy">enlace</a> se encuentra el repositorio oficial del m&oacute;dulo <b>scikit-fuzzy</b>, por supuesto puede buscar otras referencias.</p><p>Para el desarrollo se tienen que resolver cada uno de los siguientes problemas comenzando una nueva secci&oacute;n (para la publicaci&oacute;n) en cada uno de ellos.</p><p><b>1.</b> Implemente tres funci&oacute;n que se llame <i>fm1</i>, <i>fm2</i> y <i>fm3</i> que implementen cada una de las sigeuintes funciones de membresia</p><p><img vspace="5" hspace="5" src="fmf.png" alt=""> </p><p>Los p&aacute;rametros que no muestras restricci&oacute;n pueden tener cualquier numero real como argumento, la funci&oacute;n debe ser capaz de evaluar tanto vectores de cualquier dimensi&oacute;n. La funci&oacute;n <img src="Practica1_eq12911564462062795608.png" alt="$\mu_3$"> recibe el nombre de singleton</p><p><b>2.</b> Construya una funci&oacute;n que gr&aacute;fique funciones de membresia en el formato de su elecci&oacute;n. La funci&oacute;n debe de recibir las abscisas y las ordenadas as&iacute; como las etiquetas de los ejes. No debe incluir el c&oacute;digo, solo el uso de la funci&oacute;n para mostrar las gr&aacute;ficas de los siguientes conjuntos difusos del problema anterior</p><p>(a) <img src="Practica1_eq01321559182483159170.png" alt="$\mu_1(x)\,con \, m=1,\,k=2$">, (b) <img src="Practica1_eq11811157126494864235.png" alt="$\mu_1(x)\,con \, m=2,\,k=4$"></p><p>(c) <img src="Practica1_eq15252789917010025736.png" alt="$\mu_2(x)\,con\, m=1,\,k=2$">, (d) <img src="Practica1_eq15367811447402584043.png" alt="$\mu_2(x)\,con\, m=2\,k=4$"></p><p>(e) <img src="Practica1_eq03867188653184128051.png" alt="$\mu_3(x)\,con\, m=2$"></p><p>Experimente con m&aacute;s valores de los parametros, &iquest;Cu&aacute;l es el efecto de cada parametro para cada funci&oacute;n?</p><p><b>3.</b> Implemente una gr&aacute;fica (subplot de 3x2) donde indique ejemplos especificos para ilustrar</p><p><img vspace="5" hspace="5" src="ema.png" alt=""> </p><p><b>4.</b> Para  los conjuntos difusos <img src="Practica1_eq00241589608756001637.png" alt="$A=\mu_1(x)\,con\, m=1,\,k=2$">, <img src="Practica1_eq03336550243267741138.png" alt="$B=\mu_1(x)\,con\, m=2,\,k=4$">, <img src="Practica1_eq02772873746823259519.png" alt="$C=\mu_2(x)\,con\, m=1,\,k=2$">,</p><p>verifique las siguientes propiedades</p><p><img vspace="5" hspace="5" src="propiedades.png" alt=""> </p><p>Para la verificaci&oacute;n, elabore la gr&aacute;fica de los conjuntos de cada lado de la igualdad y posteriormente observe que el resultado gr&aacute;fico es el mismo</p><p>No es necesario incluir conclusiones en esta pr&aacute;ctica, si lo considera necesario puede incluir ap&eacute;ndices, no olvide incluir sus referencias.</p><p>El c&oacute;digo de esta publicaci&oacute;n lo puedes encontrar en el siguiente &lt; enlace&gt;</p><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018b</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %% Práctica 1: Operaciones, relaciones y transformaciones en el dominio difuso
-
+% Duración: 9.5 horas
 %% Objetivos 
 %%
 % 
-% # Gráficar las funciones de pertenecia implementadas en la herramienta
-% Fuzzy Logic Toolbox
-% # 
-% # 
-
+% * Implementar operaciones de conjuntos difusos, utilizando MATLAB
+% * Implementar relaciones de conjuntos difusos, utilizando MATLAB
+% * Implementar tranformaciones de conjuntos difusos, utilizando MATLAB
+%
+% 
+% 
 %% Desarrollo
 % MATLAB cuenta con la herramienta *Fuzzy Logic Toolbox*, que tiene
-% implementada la función de menbresia _trapmf_, para consultar su 
+% implementada la función de membresia _trapmf_, para consultar su 
 % documentación y ayuda
 %
 
@@ -207,13 +208,12 @@ title('Gráfica del conjunto difuzo C=A\cup B')
 % iniciar indicando el nombre de la práctica y sus datos personales,
 % equipos de dos o tres personas
 % (Portada). El índice del contenido lo genera Publish (índice). Los
-% objetivos son los sigueintes:
-%
-% * 
+% objetivos deben ser incluidos y se han presentado al principio de la
+% práctica.
 %
 % Como introducción investigue  módulos de Python para logica difuza,
 % puede incluir, como se instala el módulo, como se gráfican las funciones
-% de membresia, como se operan los conjuntos difusos, ejemplosl etc., en el
+% de membresia, como se operan los conjuntos difusos, ejemplos, etc., en el
 % siguiente <https://github.com/scikit-fuzzy/scikit-fuzzy enlace> se
 % encuentra el repositorio oficial del módulo *scikit-fuzzy*, por supuesto
 % puede buscar otras referencias.
@@ -222,25 +222,45 @@ title('Gráfica del conjunto difuzo C=A\cup B')
 % problemas comenzando una nueva sección (para la publicación) en cada uno
 % de ellos.
 %
-% *1.* Implemente una función que se llame _senomf_ que implemente la
-% sigueinte función de membresia
+% *1.* Implemente tres función que se llame _fm1_, _fm2_ y _fm3_ que 
+% implementen cada una de las sigeuintes funciones de membresia
+%
+% <<fmf.png>>
+% 
+% Los párametros que no muestras restricción pueden tener cualquier numero
+% real como argumento, la función debe ser capaz de evaluar tanto vectores
+% de cualquier dimensión. La función $\mu_3$ recibe el nombre de singleton
 %
 % *2.* Construya una función que gráfique funciones de membresia en el formato
 % de su elección. La función debe de recibir las abscisas y las ordenadas
 % así como las etiquetas de los ejes. No debe incluir el código, solo el 
-% uso de la función para mostrar la gráfica del sigueinte conjunto difuzo
+% uso de la función para mostrar las gráficas de los siguientes conjuntos
+% difusos del problema anterior
+%
+% (a) $\mu_1(x)\,con \, m=1,\,k=2$, (b) $\mu_1(x)\,con \, m=2,\,k=4$
+%
+% (c) $\mu_2(x)\,con\, m=1,\,k=2$, (d) $\mu_2(x)\,con\, m=2\,k=4$
+%
+% (e) $\mu_3(x)\,con\, m=2$
+%
+% Experimente con más valores de los parametros, ¿Cuál es el efecto de cada
+% parametro para cada función?
 %
 % *3.* Implemente una gráfica (subplot de 3x2) donde indique ejemplos
 % especificos para ilustrar
 %
 % <<ema.png>>
 % 
-% *4.* Para  los conjuntos difusos
+% *4.* Para  los conjuntos difusos $A=\mu_1(x)\,con\, m=1,\,k=2$,
+% $B=\mu_1(x)\,con\, m=2,\,k=4$, $C=\mu_2(x)\,con\, m=1,\,k=2$,
 %
 % verifique las siguientes propiedades
 %
 % <<propiedades.png>>
 % 
+% Para la verificación, elabore la gráfica de los conjuntos de cada lado de
+% la igualdad y posteriormente observe que el resultado gráfico es el mismo
+%
 % No es necesario incluir conclusiones en esta práctica, si lo considera
 % necesario puede incluir apéndices, no olvide incluir sus referencias. 
 %%

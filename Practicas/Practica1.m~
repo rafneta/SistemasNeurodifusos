@@ -1,5 +1,5 @@
 %% Práctica 1: Operaciones, relaciones y transformaciones en el dominio difuso
-% Duración: 9.5 horas
+
 %% Objetivos 
 %%
 % 
@@ -84,8 +84,7 @@ title('Gráfica del conjunto difuzo C=A\cup B')
 % iniciar indicando el nombre de la práctica y sus datos personales,
 % equipos de dos o tres personas
 % (Portada). El índice del contenido lo genera Publish (índice). Los
-% objetivos deben ser incluidos y se han presentado al principio de la
-% práctica.
+% objetivos deben ser incluidos y se han presentado al principio de
 %
 % Como introducción investigue  módulos de Python para logica difuza,
 % puede incluir, como se instala el módulo, como se gráfican las funciones
