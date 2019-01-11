@@ -144,4 +144,3 @@ title('Gráfica del conjunto difuzo C=A\cup B')
 % El código de esta publicación lo puedes encontrar en el siguiente
 % < enlace>
 
-
